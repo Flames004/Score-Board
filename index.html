@@ -20,8 +20,8 @@
                     <input type="number" id="scoreA" class="scoreValue" placeholder="0" value="0">
                     <span class="setValue">0</span>
                 </div>
-                <button class="incBtn" onclick="incScore(0)">+</button>
-                <button class="decBtn" onclick="decScore(0)">-</button>
+                <button class="incBtn" onclick="incScore(0)" style="cursor: pointer;">+</button>
+                <button class="decBtn" onclick="decScore(0)" style="cursor: pointer;">-</button>
             </div>
             <div class="teams" id="teamB">
                 <input id="inputB" class="teamName" type="text" value="Team B">
@@ -29,23 +29,36 @@
                     <span class="setValue">0</span>
                     <input type="number" id="scoreB" class="scoreValue" placeholder="0" value="0">
                 </div>
-                <button class="incBtn" onclick="incScore(1)">+</button>
-                <button class="decBtn" onclick="decScore(1)">-</button>
+                <button class="incBtn" onclick="incScore(1)" style="cursor: pointer;">+</button>
+                <button class="decBtn" onclick="decScore(1)" style="cursor: pointer;">-</button>
             </div>
             <div class="reset-button">
-                <button id="resetBtn" onclick="reset()">Reset</button>
+                <button id="resetBtn" onclick="reset()" style="cursor: pointer;">Reset</button>
                 <button id="gameReset" onclick="gameReset()">Game Reset</button>
             </div>
+            <br>
+            <br>
+            <label for="switch">
+                <input type="checkbox" id="switch" class="switch">
+                <label for="switch"></label>
+      </label>
+      <script>
+      const $html = document.querySelector("html");
+          const $checkbox = document.querySelector("#switch");
+          
+          $checkbox.addEventListener("change", function() {
+              $html.classList.toggle("light-mode");
+          });</script>
         </div>
 
         <div class="details">
             <div class="win">
-                <label for="winScore">Winning Score :</label>
-                <input type="number" id="winScore" value="11">
+                <label for="winScore" style="color: aliceblue;">Winning Score :</label>
+                <input type="number" id="winScore" value="11" style="color: aliceblue;">
             </div>
             <div class="sets">
-                <label for="winSet">Total Sets :</label>
-                <input type="number" id="winSet" value="3">
+                <label for="winSet" style="color: aliceblue;">Total Sets :</label>
+                <input type="number" id="winSet" value="3" style="color: aliceblue;">
             </div>
         </div>
 
