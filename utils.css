@@ -1,6 +1,8 @@
 img{
+    z-index: 5;
     position: absolute;
-    z-index: 0;
+    height: 100%;
+    width: 100%;
 }
 button {
     cursor: pointer;
@@ -15,9 +17,9 @@ button {
 }
 
 /* Firefox */
-.teams input[type=number] {
+/* .teams input[type=number] {
     -moz-appearance: textfield;
-}
+} */
 
 /* Changing styles of placeholder */
 ::placeholder {

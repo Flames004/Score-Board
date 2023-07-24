@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,50 @@
     <link rel="stylesheet" href="utils.css">
     <title>Score Board</title>
 </head>
+
 <body>
-    <div class="details">
-        <p id="message">Let's PLAY !</p>
-        <div class="win">
-            <label for="winScore">Winning Score :</label>
-            <input type="number" id="winScore" value="25">
+    <img src="assets/frame.png" alt="">
+    <p id="message">Let's PLAY !</p>
+    <div class="scoreBox">
+        <div class="container">
+            <div class="teams" id="teamA">
+                <input id="inputA" class="teamName" type="text" value="Team A">
+                <div class="scoreAndset">
+                    <input type="number" id="scoreA" class="scoreValue" placeholder="0" value="0">
+                    <span class="setValue">0</span>
+                </div>
+                <button class="incBtn" onclick="incScore(0)">+</button>
+                <button class="decBtn" onclick="decScore(0)">-</button>
+            </div>
+            <div class="teams" id="teamB">
+                <input id="inputB" class="teamName" type="text" value="Team B">
+                <div class="scoreAndset">
+                    <span class="setValue">0</span>
+                    <input type="number" id="scoreB" class="scoreValue" placeholder="0" value="0">
+                </div>
+                <button class="incBtn" onclick="incScore(1)">+</button>
+                <button class="decBtn" onclick="decScore(1)">-</button>
+            </div>
+            <div class="reset-button">
+                <button id="resetBtn" onclick="reset()">Reset</button>
+                <button id="gameReset" onclick="gameReset()">Game Reset</button>
+            </div>
         </div>
+
+        <div class="details">
+            <div class="win">
+                <label for="winScore">Winning Score :</label>
+                <input type="number" id="winScore" value="11">
+            </div>
+            <div class="sets">
+                <label for="winSet">Total Sets :</label>
+                <input type="number" id="winSet" value="3">
+            </div>
+        </div>
+
     </div>
-    <img src="assets/1000_F_477972381_KtVXpLKe10gJXocBIFXxV4OpaB38tOY3.jpg" alt="">
-    <div class="container">
-        <div class="teams" id="teamA">
-            <input id="inputA" class="teamName" type="text" value="Team A">
-            <input type="number" class="scoreValue" placeholder="0" value="0">
-            <button class="incBtn"  onclick="incScore(0)">+</button>
-            <button class="decBtn" onclick="decScore(0)">-</button>
-        </div>
-        <div class="teams" id="teamB">
-            <input id="inputB" class="teamName" type="text" value="Team B">
-            <input type="number" class="scoreValue" placeholder="0" value="0">
-            <button class="incBtn" onclick="incScore(1)">+</button>
-            <button class="decBtn" onclick="decScore(1)">-</button>
-        </div>
-        <div class="reset-button">
-            <button id="resetBtn" onclick="reset()">Reset</button>
-        </div>
-    </div>
-    
+
 </body>
 <script src="script.js"></script>
+
 </html>
