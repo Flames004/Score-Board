@@ -1,11 +1,7 @@
 img{
-    z-index: 5;
     position: absolute;
     height: 100%;
     width: 100%;
-}
-button {
-    cursor: pointer;
 }
 
 /* Reamoving the spin buttons (arrow buttons) from input type: number */
@@ -17,9 +13,9 @@ button {
 }
 
 /* Firefox */
-/* .teams input[type=number] {
+.teams input[type=number] {
     -moz-appearance: textfield;
-} */
+}
 
 /* Changing styles of placeholder */
 ::placeholder {
