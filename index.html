@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
     <title>Score Board</title>
 </head>
 <body>
-    <!-- <h1>Let's Play</h1> -->
     <div class="container">
         <div class="teams" id="teamA">
-            <input type="text" placeholder="Team A">
+            <input id="inputA" type="text" placeholder="Team A">
             <input type="number" class="scoreValue" placeholder="0">
             <button class="incBtn"  onclick="incScore(0)">+</button>
             <button class="decBtn" onclick="decScore(0)">-</button>
         </div>
         <div class="teams" id="teamB">
-            <input type="text" placeholder="Team B">
+            <input id="inputB" type="text" placeholder="Team B">
             <input type="number" class="scoreValue" placeholder="0">
             <button class="incBtn" onclick="incScore(1)">+</button>
             <button class="decBtn" onclick="decScore(1)">-</button>

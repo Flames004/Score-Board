@@ -31,9 +31,7 @@ body {
     flex-direction: column;
 }
 
-button{
-    cursor: pointer;
-}
+
 .teams input {
     height: 50px;
     text-align: center;
@@ -45,6 +43,19 @@ button{
     height: 40px;
     font-size: x-large;
     font-weight: bold;
+}
+#inputA{
+    background: red;
+    color: black;
+}
+#inputB{
+    background: blue;
+    color: black;
+}
+.scoreValue{
+    height: 100px;
+    color: black;
+    background-color: green;
 }
 
 #resetBtn {
