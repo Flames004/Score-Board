@@ -1,3 +1,37 @@
-button{
+img{
+    position: absolute;
+    z-index: 0;
+}
+button {
     cursor: pointer;
+}
+
+/* Reamoving the spin buttons (arrow buttons) from input type: number */
+/* Chrome, Safari, Edge, Opera */
+.teams input::-webkit-outer-spin-button,
+.teams input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.teams input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Changing styles of placeholder */
+::placeholder {
+    color: black;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: black;
 }
