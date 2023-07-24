@@ -8,16 +8,24 @@
     <title>Score Board</title>
 </head>
 <body>
+    <div class="details">
+        <p id="message">Let's PLAY !</p>
+        <div class="win">
+            <label for="winScore">Winning Score :</label>
+            <input type="number" id="winScore" value="25">
+        </div>
+    </div>
+    <img src="assets/1000_F_477972381_KtVXpLKe10gJXocBIFXxV4OpaB38tOY3.jpg" alt="">
     <div class="container">
         <div class="teams" id="teamA">
-            <input id="inputA" type="text" placeholder="Team A">
-            <input type="number" class="scoreValue" placeholder="0">
+            <input id="inputA" class="teamName" type="text" value="Team A">
+            <input type="number" class="scoreValue" placeholder="0" value="0">
             <button class="incBtn"  onclick="incScore(0)">+</button>
             <button class="decBtn" onclick="decScore(0)">-</button>
         </div>
         <div class="teams" id="teamB">
-            <input id="inputB" type="text" placeholder="Team B">
-            <input type="number" class="scoreValue" placeholder="0">
+            <input id="inputB" class="teamName" type="text" value="Team B">
+            <input type="number" class="scoreValue" placeholder="0" value="0">
             <button class="incBtn" onclick="incScore(1)">+</button>
             <button class="decBtn" onclick="decScore(1)">-</button>
         </div>
@@ -25,6 +33,7 @@
             <button id="resetBtn" onclick="reset()">Reset</button>
         </div>
     </div>
+    
 </body>
 <script src="script.js"></script>
 </html>
