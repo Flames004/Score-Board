@@ -1,20 +1,39 @@
 function incScore(indexvalue) {
+    let winScore = document.getElementById('winScore').value;
     let team = document.getElementsByClassName("incBtn")[indexvalue].parentElement;
     let init = Number(team.getElementsByTagName("input")[1].value);
     team.getElementsByTagName("input")[1].value = Number(init + 1);
+
+    // If the team wins
+    if (team.getElementsByTagName("input")[1].value === winScore) {
+        document.getElementById('message').textContent = 'Congratulations ' + document.getElementsByClassName('teamName')[indexvalue].value + ' Wins!';
+
+        // Disabling the increase button
+        let incBtn = document.getElementsByClassName("incBtn");
+        Array.from(incBtn).forEach(element => {
+            element.disabled = true;
+        });
+    }
 }
 
 const decScore = (indexvalue) => {
     let team = document.getElementsByClassName("decBtn")[indexvalue].parentElement;
     let init = Number(team.getElementsByTagName("input")[1].value);
-    if(init>0){
+    if (init > 0) {
         team.getElementsByTagName("input")[1].value = Number(init - 1);
+
     }
 }
 
-const reset = () =>{
+const reset = () => {
     let score = document.getElementsByClassName("scoreValue");
     Array.from(score).forEach(element => {
         element.value = 0;
     });
+    let incBtn = document.getElementsByClassName("incBtn");
+    Array.from(incBtn).forEach(element => {
+        element.disabled = false;
+    });
+    document.getElementById('message').textContent = "Let's PLAY !";
+
 }
