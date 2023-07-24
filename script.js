@@ -7,6 +7,14 @@ function incScore(indexvalue) {
     let team = document.getElementsByClassName("incBtn")[indexvalue].parentElement;
     let init = Number(team.getElementsByTagName("input")[1].value);
     team.getElementsByTagName("input")[1].value = Number(init + 1);
+    document.getElementById('message').textContent = 'Point for ' + document.getElementsByClassName("teamName")[indexvalue].value;
+
+    //Logic for duece and advantage
+    if(Number(document.getElementsByClassName("scoreValue")[0].value) == (Number(winScore) - 1) && Number(document.getElementsByClassName("scoreValue")[1].value) == (Number(winScore) - 1)){
+        document.getElementById('message').textContent = 'Duece';
+        winScore = Number(winScore) + 1;
+        document.getElementById('winScore').value = winScore;
+    }
 
     // If the team wins
     if (team.getElementsByTagName("input")[1].value === winScore) {
