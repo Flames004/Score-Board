@@ -1,6 +1,7 @@
 // Setting up the sound
 const winSound = new Audio('assets/mmm-celeb.mp3');
 const btnSound = new Audio('assets/pickupCoin.wav');
+const whistleSound = new Audio('assets/whistle.mp3');
 let dCount = Number(0); //duece count
 
 // Function for increase button
@@ -72,6 +73,7 @@ function decScore(indexvalue) {
 function reset() {
     winSound.pause();
     winSound.load();
+    whistleSound.play();
     document.getElementById('winScore').value = Number(document.getElementById('winScore').value) - dCount;
     dCount = Number(0);
     let score = document.getElementsByClassName("scoreValue");

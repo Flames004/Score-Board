@@ -15,26 +15,26 @@
     <div class="scoreBox">
         <div class="container">
             <div class="teams" id="teamA">
-                <input id="inputA" class="teamName" type="text" value="Team A">
+                <input title="Change team name" id="inputA" class="teamName" type="text" value="Team A">
                 <div class="scoreAndset">
                     <input type="number" id="scoreA" class="scoreValue" placeholder="0" value="0">
                     <span class="setValue">0</span>
                 </div>
-                <button class="incBtn" onclick="incScore(0)" style="cursor: pointer;">+</button>
-                <button class="decBtn" onclick="decScore(0)" style="cursor: pointer;">-</button>
+                <button style="cursor:pointer;" class="incBtn" onclick="incScore(0)">+</button>
+                <button style="cursor:pointer;" class="decBtn" onclick="decScore(0)">-</button>
             </div>
             <div class="teams" id="teamB">
-                <input id="inputB" class="teamName" type="text" value="Team B">
+                <input title="Change team name" id="inputB" class="teamName" type="text" value="Team B">
                 <div class="scoreAndset">
                     <span class="setValue">0</span>
                     <input type="number" id="scoreB" class="scoreValue" placeholder="0" value="0">
                 </div>
-                <button class="incBtn" onclick="incScore(1)" style="cursor: pointer;">+</button>
-                <button class="decBtn" onclick="decScore(1)" style="cursor: pointer;">-</button>
+                <button style="cursor:pointer;" class="incBtn" onclick="incScore(1)">+</button>
+                <button style="cursor:pointer;" class="decBtn" onclick="decScore(1)">-</button>
             </div>
             <div class="reset-button">
-                <button id="resetBtn" onclick="reset()" style="cursor: pointer;">Reset</button>
-                <button id="gameReset" onclick="gameReset()">Game Reset</button>
+                <button style="cursor:pointer;" id="resetBtn" onclick="reset()">Reset</button>
+                <button style="cursor:pointer;" id="gameReset" onclick="gameReset()">Game Reset</button>
             </div>
             <br>
             <br>
