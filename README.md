@@ -22,10 +22,6 @@ Score Board is a web application that allows users to keep track of scores for v
 
 - Interactive audio for each event.
 
-- **DARK MODE :** Now you can toggle between dark and light mode using the button provided on top right corner.
-
-<img align="left" alt="Light Mode" width="300" src="assets/light.png"><img alt="Dark Mode" width="300" src="assets/dark.png">
-
 ## How to Use
 
 1. Clone the repository to your local machine.
@@ -64,17 +60,13 @@ index.html
 
 - Change the score required for the team to win the set.
 
-8. Update scores.
+8. Update Scores.
 
-- As the activity make progress, click on the increase or decrease buttons to update the scores.
+- As the activity progresses, click on the score cells to update the scores.
 
-9. Automatically sets update.
+9. Update Sets.
 
-- As the game progress with each sets, they get updated automatically with respect of each team, player or participant.
-
-10. Reset scoreboard.
-
-- Reset the scoreboard after each set and game by clicking on 'Reset' or 'Game Reset' button.
+- As the game progress with each sets, update them by clicking on the respective set cells.
 
 ## Upcoming Features
 
