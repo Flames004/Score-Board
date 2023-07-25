@@ -61,14 +61,14 @@ body {
 }
 
 #inputA {
-    background:  linear-gradient(to bottom right, #0000cc 0%, #ff5050 100%);
-    color: black;
+    background:  red;
+    color:whitesmoke;
     
 }
 
 #inputB {
-    background:  linear-gradient(to top right, #66ffff 0%, #9900cc 100%);
-    color: black;
+    background:  blue;
+    color: whitesmoke;
    
 }
 
@@ -216,28 +216,33 @@ span {
 
 @keyframes glow {
     0% {
-        border-color: red;
-        background: linear-gradient(to bottom right, #00ffff 0%, #9900ff 100%);
+        border-color: rgb(30, 3, 3);
+        background: linear-gradient(to bottom right, #00ffff 0%, #af43f7 100%);
+        color: #2a2d30;
     }
 
     25% {
-        border-color: lawngreen;
-        background: linear-gradient(to bottom left, #0000ff 0%, #ff0066 100%);
+        border-color: rgb(14, 27, 1);
+        background: linear-gradient(to bottom left, #afafe0 0%, #fd5095 100%);
+        color: #00ffff;
     }
 
     50% {
-        border-color: blue;
-        background: linear-gradient(to bottom right, #0000cc 0%, #ff0066 100%);
+        border-color: rgb(1, 1, 14);
+        background: linear-gradient(to bottom right, #102c34 0%, #ef6beb 100%);
+        color: #afafe0;
     }
 
     75% {
-        border-color: yellow;
-        background: linear-gradient(45deg, #33ccff 0%, #ff99cc 100%);
+        border-color: rgb(25, 25, 2);
+        background: linear-gradient(45deg, #15b9ef 0%, #55fcb1 100%);
+        color: #080a0c;
     }
 
     100% {
-        border-color: red;
-        background: linear-gradient(to bottom left, #0099cc 0%, #33cc33 100%);
+        border-color: rgb(20, 1, 1);
+        background: linear-gradient(to bottom left, #ebf686 0%, #6bf65b 100%);
+        color: darkorange;
     }
 }
 
@@ -249,9 +254,9 @@ span {
 
 
 :root{
-    --bg: linear-gradient(to left, #33ccff 0%, #cc66ff 100%);
+    --bg: linear-gradient(to bottom right, #ccffff 0%, #ffffff 100%);
    
-    --bg-input: #e1e1ed;
+    --bg-input: rgb(248, 241, 241);
 }
 
 
@@ -259,7 +264,7 @@ span {
 
 .light-mode {
     --bg: linear-gradient(to left, #2a2d30, #080a0c);
-    --bg-input: #fcf9f9;
+    --bg-input: #181414;
 }
 
 body {
