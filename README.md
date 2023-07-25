@@ -12,6 +12,8 @@ Score Board is a web application that allows users to keep track of scores for v
 
 - Update Scores: Score Board allows users to update scores for each participant or team as the activity progresses.
 
+- Reset Scoreboard: Reset the scoreboard after each set by clicking on 'Reset' button. Complete reset is done after any of the teams,players or participants win by clicking on 'Game Reset' button.
+
 - Real-time Updates: The scores are updated in real-time, allowing all participants and viewers to see the latest results.
 
 - Customization: Users can customize the appearance of the scoreboards to match the theme of the event.
@@ -19,6 +21,10 @@ Score Board is a web application that allows users to keep track of scores for v
 - Celebrations: The winning team or participant is displayed with celebration for winning the game.
 
 - Interactive audio for each event.
+
+- **DARK MODE :** Now you can toggle between dark and light mode using the button provided on top right corner.
+<br>
+<img align="left" alt="Light Mode" width="300" src="assets/light.png"> <img align="right" alt="Dark Mode" width="300" src="assets/dark.png">
 
 ## How to Use
 
@@ -59,13 +65,13 @@ http://localhost:3000
 
 - Change the score required for the team to win the set.
 
-8. Update Scores.
+8. Update scores.
 
-- As the activity progresses, click on the score cells to update the scores.
+- As the activity make progress, click on the increase or decrease buttons to update the scores.
 
-9. Update Sets.
+9. Automatically sets update.
 
-- As the game progress with each sets, update them by clicking on the respective set cells.
+- As the game progress with each sets, they get updated automatically with respect of each team, player or participant.
 
 ## Upcoming Features
 

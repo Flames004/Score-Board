@@ -97,3 +97,17 @@ function gameReset() {
     document.getElementById('gameReset').style.display = "none";
     document.getElementById('resetBtn').style.display = "block";
 }
+
+//Function to activate dark mode
+const toggle = document.getElementById('toggle');
+const body = document.body;
+
+toggle.addEventListener('input', (e) => {
+    const isChecked = e.target.checked;
+
+    if (isChecked) {
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+    }
+});

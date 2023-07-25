@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="utils.css">
     <title>Score Board</title>
 </head>
@@ -12,7 +15,10 @@
 <body>
     <div class="toggle">
         <input type="checkbox" name="" id="toggle">
-        <label for="toggle"></label>
+        <label for="toggle">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+        </label>
     </div>
     <img src="assets/frame.png" alt="">
     <p id="message">Let's PLAY !</p>
@@ -40,32 +46,18 @@
                 <button style="cursor:pointer;" id="resetBtn" onclick="reset()">Reset</button>
                 <button style="cursor:pointer;" id="gameReset" onclick="gameReset()">Game Reset</button>
             </div>
-            <br>
-            <br>
-            <label for="switch">
-                <input type="checkbox" id="switch" class="switch">
-                <label for="switch"></label>
-      </label>
-      <script>
-      const $html = document.querySelector("html");
-          const $checkbox = document.querySelector("#switch");
-          
-          $checkbox.addEventListener("change", function() {
-              $html.classList.toggle("light-mode");
-          });</script>
         </div>
 
         <div class="details">
             <div class="win">
-                <label for="winScore" style="color: rgb(42, 146, 238);">Winning Score :</label>
-                <input type="number" id="winScore" value="11" style="color: rgb(38, 147, 242);">
+                <label for="winScore">Winning Score :</label>
+                <input type="number" id="winScore" value="11">
             </div>
             <div class="sets">
-                <label for="winSet" style="color: rgb(38, 146, 240);">Total Sets :</label>
-                <input type="number" id="winSet" value="3" style="color: rgb(32, 145, 244);">
+                <label for="winSet">Total Sets :</label>
+                <input type="number" id="winSet" value="3">
             </div>
         </div>
-
     </div>
 
 </body>
