@@ -111,3 +111,71 @@ toggle.addEventListener('input', (e) => {
         body.classList.remove('dark-mode');
     }
 });
+
+//Logic for sports timer
+let play = document.getElementById("play");
+let pause = document.getElementById("pause");
+let minutes = document.getElementById("minutes");
+let seconds = document.getElementById("seconds");
+let controls = document.getElementsByTagName("button");
+let minuteSet = minutes.value;
+let secondSet = seconds.value;
+let countdown;
+
+
+Array.from(controls).forEach(element => {
+    element.addEventListener('click', () => {
+        if (element.id == "play") {
+            playTime();
+        }
+
+        if (element.id == "pause") {
+            pauseTime();
+        }
+
+        if (element.id == "timer-reset") {
+            resetTime();
+        }
+
+    })
+});
+
+function padNumber(unit) {   //to get the leading zeroes
+    let result = unit.toString().padStart(2, '0');
+    return result;
+}
+
+function playTime() {
+    countdown = setTimeout(() => {
+        if (seconds.value > 0) {
+            seconds.value = padNumber(seconds.value - 1);
+        }
+        if (seconds.value == 0 && minutes.value > 0) {
+            minutes.value = padNumber(minutes.value - 1);
+            seconds.value = 59;
+        }
+        if (seconds.value == 0 && minutes.value == 0) {
+            play.hidden = false;
+            pause.hidden = true;
+            alert("Time's Up!");
+        }
+        else {
+            playTime();
+        }
+    }, 1000);
+    play.hidden = true;
+    pause.hidden = false;
+}
+
+function pauseTime() {
+    clearInterval(countdown);
+    play.hidden = false;
+    pause.hidden = true;
+}
+
+function resetTime() {
+    // console.log("reset clicked");
+    pauseTime();
+    minutes.value = minuteSet;
+    seconds.value = secondSet;
+}

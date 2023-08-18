@@ -162,17 +162,88 @@ span {
     background: orange;
 }
 
+.side-menu{
+    margin-left: 25px;
+}
 
+/* # Sports Timer */
+.sports-timer{
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 8px;
+    width: 250px;
+    position: relative;
+    z-index: 6;
+    border-radius: 5px;
+    background: mistyrose;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.timer {
+    margin-top: 5px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+}
+.timer input{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    height: 60px;
+    width: 90px;
+    text-align: center;
+    font-size: 50px;
+}
+#divider{
+    height: 50px;
+    position: relative;
+    bottom: 28px;
+    display: flex;
+    color: #000;
+    justify-content: center;
+    font-size: 80px;
+    /* border: 1px solid black; */
+    margin: 4px;
+}
+.controls {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.playbox {
+    width: 50%;
+    position: relative;
+}
+
+#play,
+#pause {
+    position: absolute;
+}
+.controls button{
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+#timer-reset{
+    z-index: 5;
+}
 
 .details {
+    position: relative;
     /* border: 1px solid green; */
     z-index: 1;
-    /* align-items: center; */
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 10px 0;
     color: black;
     height: 150px;
     width: auto;

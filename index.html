@@ -48,14 +48,32 @@
             </div>
         </div>
 
-        <div class="details">
-            <div class="win">
-                <label for="winScore">Winning Score :</label>
-                <input type="number" id="winScore" value="11">
+        <div class="side-menu">
+
+            <div class="sports-timer">
+                <div class="timer">
+                    <input type="text" id="minutes" value="05">
+                    <div id="divider">&colon;</div>
+                    <input type="text" id="seconds" value="00">
+                </div>
+                <div class="controls">
+                    <div class="playbox">
+                        <button id="play"><i class="fa-solid fa-play"></i></button>
+                        <button id="pause" hidden><i class="fa-solid fa-pause"></i></button>
+                    </div>
+                    <button id="timer-reset"><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
             </div>
-            <div class="sets">
-                <label for="winSet">Total Sets :</label>
-                <input type="number" id="winSet" value="3">
+
+            <div class="details">
+                <div class="win">
+                    <label for="winScore">Winning Score :</label>
+                    <input type="number" id="winScore" value="11">
+                </div>
+                <div class="sets">
+                    <label for="winSet">Total Sets :</label>
+                    <input type="number" id="winSet" value="3">
+                </div>
             </div>
         </div>
     </div>
